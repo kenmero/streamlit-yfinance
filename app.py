@@ -1,6 +1,12 @@
 import streamlit as st
 import params as pm
 import utils
+from PIL import Image
+
+image = Image.open('./images/tab_img.jpg')
+st.set_page_config(
+    page_title='米国株価可視化アプリ',
+    page_icon=image)
 
 st.title('米国株価可視化アプリ')
 
